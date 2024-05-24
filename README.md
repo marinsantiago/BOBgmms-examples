@@ -36,11 +36,11 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
   - `sim9`: Source code to reproduce the results for the 9th simulation setting.
   - `sim-illustrative`: Source code to reproduce the results used as an illustrative example.
   - `sim-varying-n`: Source code to reproduce the results with a growing sample size.
-    - `sim_n1`: Case with $n=50$
-    - `sim_n2`: Case with $n=125$
-    - `sim_n3`: Case with $n=250$
-    - `sim_n4`: Case with $n=375$
-    - `sim_n5`: Case with $n=500$
+    - `sim_n1`: Case with $n=50$.
+    - `sim_n2`: Case with $n=125$.
+    - `sim_n3`: Case with $n=250$.
+    - `sim_n4`: Case with $n=375$.
+    - `sim_n5`: Case with $n=500$.
   - `sim_results`: Source code to generate plots and tables with results from the simulation experiments.
 
 - `stan`: Stan code to fit a Bayesian mixture of Gaussians assuming conjugate priors.
