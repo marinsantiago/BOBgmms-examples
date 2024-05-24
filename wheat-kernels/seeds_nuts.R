@@ -28,7 +28,6 @@ nuts.draws <- nuts.Sampler(y, init.params, S * 2,
 end.nuts   <- Sys.time()
 (nuts.time <- difftime(end.nuts, start.nuts, units = "mins"))
 
-
 # -----------------------------------------
 # ADVI - Mean Field Variational Bayes
 # -----------------------------------------
