@@ -77,7 +77,7 @@ Please be aware that before downloading and installing `rstan`, you need to set 
 
 ## <a name="system"></a> System Requirements
 
-The parallelization is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., Mac, Linux, Unix, BSD), not on Windows. For further details, see [Package `parallel`](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). We run our code on Mac (macOS version 14.4.1). 
+The parallelization is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., Mac, Linux, Unix, BSD), not on Windows. For further details, see [Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). We run our code on Mac (macOS version 14.4.1). 
 
 ## <a name="data"></a> Data
 
@@ -85,19 +85,19 @@ We make use of the [*Wine*](https://archive.ics.uci.edu/dataset/109/wine) (Aeber
 
 ## <a name="run"></a> Running the Scripts
 
-Step-by-step instructions on how to reproduce the results from the article.
+Step-by-step instructions on how to reproduce the results from the article:
 
 #### Simulation Results
 
-To reproduce the simulation results from the article, start by downloading the folder `sim1` and execute the scripts `sim1_data.R`, `sim1_wbb.R`, `sim1_bob.R`, `sim1_nuts.R`, and `sim1_results.R`, in that order. **It is strongly recommended to restart the R session** each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. Then, repeat the same steps for folders `sim2` -- `sim9`. Box plots and tables summarizing the results for all nine settings can be obtained by executing the scripts `boxplots.R` and `medians.R` from the folder `sim_results`.
+To reproduce the simulation results from the article, start by downloading the folder `sim1` and execute the scripts `sim1_data.R`, `sim1_wbb.R`, `sim1_bob.R`, `sim1_nuts.R`, and `sim1_results.R`, in that order. **It is strongly recommended to restart the R session** each time you execute a script in order to terminate any remaining "zombie processes" from the parallelization exercise. Then, repeat the same steps for folders `sim2` -- `sim9`. To obtain box plots and tables summarizing the results for all nine settings, execute the scripts `boxplots.R` and `medians.R` from the `sim_results` folder.
 
-To reproduce the results from our illustrative example, download the folder `sim-illustrative` and execute the scripts `sim_illustrative_rw.R`, `sim_illustrative_nuts.R`, and `sim_illustrative_results.R`, in that order. Again, **it is strongly recommended to restart the R session** each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise.
+To reproduce the results from our illustrative example, download the folder `sim-illustrative` and execute the scripts `sim_illustrative_rw.R`, `sim_illustrative_nuts.R`, and `sim_illustrative_results.R`, in that order. Again, **it is strongly recommended to restart the R session** each time you execute a script in order to terminate any remaining "zombie processes" from the parallelization exercise.
 
-To reproduce the simulation results for a varying sample size, download the folder `sim-varying-n` and execute the script `sim_n1.R` from the folder `sim_n1`. Repeat the same exercise for the folders `sim_n2` -- `sim_n5`. Once again, **it is strongly recommended to restart the R session** each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. Line-plots summarizing the results can be obtained by executing the script `lineplots.R` from the folder `sim_results`.
+To reproduce the simulation results for varying sample sizes, download the folder `sim-varying-n` and execute the `sim_n1.R` script from the `sim_n1` folder. Repeat this process for the folders `sim_n2` -- `sim_n5`. Once again, **it is strongly recommended to restart the R session** each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. To generate line plots summarizing the results, execute the script `lineplots.R` located in the `sim_results` folder.
 
 #### Results from Benchmark Data Analysis
 
-To reproduce the results from our analysis of benchmark data, start by downloading the folder `wines` and execute the scripts `wines_rw.R`, `wines_nuts.R`, and `wines_results.R`, in that order. **It is strongly recommended to restart the R session** each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. The data is available in the file `wine.Rdata` (Aeberhard and Forina, 1991). Then, repeat the same exercise for the folder `wheat-kernels`. In such a case, the data is available in the file `seeds.Rdata` (Charytanowicz et al., 2012).
+To reproduce the results from our benchmark data analysis, start by downloading the folder `wines` and execute the scripts `wines_rw.R`, `wines_nuts.R`, and `wines_results.R`, in that order. **It is strongly recommended to restart the R session** each time you execute a script in order to terminate any remaining "zombie processes" from the parallelization exercise. The data is available in the file `wine.Rdata` (Aeberhard and Forina, 1991). Then, repeat this process for the `wheat-kernels` folder. In such a case, the data is available in the file `seeds.Rdata` (Charytanowicz et al., 2012).
 
 ## <a name="cite"></a> Citation
 
@@ -107,7 +107,7 @@ If you use any part of this code in your work, please consider citing our paper:
 @misc{marin2023bob,
       title         = {BOB: Bayesian Optimized Bootstrap for Uncertainty Quantification in Gaussian Mixture Models}, 
       author        = {Santiago Marin and Bronwyn Loong and Anton H. Westveld},
-      year          = {2023},
+      year          = {2024},
       eprint        = {2311.03644},
       archivePrefix = {arXiv},
       primaryClass  = {stat.ME}
