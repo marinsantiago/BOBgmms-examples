@@ -1,11 +1,5 @@
 # BOBgmms-examples
 
-<!-- badges: start -->
-
-[![arXiv](https://img.shields.io/badge/arXiv-2311.03644-blue.svg)](https://arxiv.org/abs/2311.03644)
-
-<!-- badges: end -->
-
 This repository contains source code to reproduce the results from the article "[BOB: Bayesian Optimized Bootstrap for Uncertainty Quantification in Gaussian Mixture Models](https://arxiv.org/abs/2311.03644)" (Marin, Loong and Westveld, 2024).
 
 The `BOBgmms` R package is available at the Github repository: [https://github.com/marinsantiago/BOBgmms](https://github.com/marinsantiago/BOBgmms)
