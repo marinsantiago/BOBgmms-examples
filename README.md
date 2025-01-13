@@ -71,7 +71,7 @@ Please be aware that before downloading and installing `rstan`, you need to set 
 
 ## <a name="system"></a> System Requirements
 
-The parallelization is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., Mac, Linux, Unix, BSD), not on Windows. For further details, see [Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). We run our code on Mac (macOS version 14.4.1). 
+The parallelization is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., macOS, Linux, Unix, BSD), not on Windows. For further details, see [Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). We run our code on Mac (macOS version 14.4.1). 
 
 ## <a name="data"></a> Data
 
