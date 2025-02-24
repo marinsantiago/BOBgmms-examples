@@ -39,7 +39,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 - `stan`: Stan code to fit a Bayesian mixture of Gaussians assuming conjugate priors.
 
-- `wheat-kernels`: Source code to reproduce the results from the analysis of the *Seeds* data.
+- `kernels`: Source code to reproduce the results from the analysis of the *Seeds* data.
 
 - `wines`: Source code to reproduce the results from the analysis of the *Wine* data.
 
