@@ -91,12 +91,12 @@ If you use any part of this code in your work, please consider citing our paper:
 
 ```
 @misc{marin_bob,
-      title         = {BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models}, 
-      author        = {Santiago Marin and Bronwyn Loong and Anton H. Westveld},
-      year          = {2024},
-      eprint        = {2311.03644},
-      archivePrefix = {arXiv},
-      primaryClass  = {stat.ME}
+  title         = {BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models}, 
+  author        = {Santiago Marin and Bronwyn Loong and Anton H. Westveld},
+  year          = {2024},
+  eprint        = {2311.03644},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ME}
 }
 ```
 
