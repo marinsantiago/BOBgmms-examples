@@ -18,7 +18,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 - `R/`: R scripts with functions required throughout the analysis.
 - `simulations/`: Source code to reproduce the results in the *Simulations* section from the article.
-  - `sim_ar_neg_05/`: Source code to reproduce the simulation results, assuming covariance matrices of the form $(\boldsymbol{\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}$, for all $k\in\{1,\dots,K\}$.
+  - `sim_ar_neg_05/`: Source code to reproduce the simulation results, assuming covariance matrices of the form $`(\boldsymbol{\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}`$, for all $k\in\{1,\dots,K\}$.
     - `sim1/`: Source code to reproduce the results for the 1st simulation setting.
     - `sim2/`: Source code to reproduce the results for the 2nd simulation setting.
     - `sim3/`: Source code to reproduce the results for the 3rd simulation setting.
