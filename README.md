@@ -41,7 +41,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 ## <a name="software"></a> Software Requirements
 
-We run all our simulations and data analyses in R (version 4.3.2) via Rstudio (version 2023.12.1+402). Additionally, we make use of the following R packages (along with their dependencies):
+We run all our simulations and data analyses in R (version 4.3.2) via Rstudio (version 2024.12.0.467). Additionally, we make use of the following R packages (along with their dependencies):
 
   - `BOBgmms` v0.1.0 (available at: [https://github.com/marinsantiago/BOBgmms](https://github.com/marinsantiago/BOBgmms))
   - `clusterHD` v1.0.2
