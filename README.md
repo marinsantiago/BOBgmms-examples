@@ -1,6 +1,6 @@
 # BOBgmms-examples
 
-This repository contains source code to reproduce the results from the article "[BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models](https://arxiv.org/abs/2311.03644)" (Marin, Loong and Westveld, 2025+).
+This repository contains source code to reproduce the results from the article "[BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models](https://arxiv.org/abs/2311.03644)" (Marin et al., 2025+).
 
 The `BOBgmms` R package is available at the Github repository: [https://github.com/marinsantiago/BOBgmms](https://github.com/marinsantiago/BOBgmms)
 
