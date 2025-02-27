@@ -59,7 +59,7 @@ Before downloading and installing `rstan`, you need to set up your R installatio
 
 ## <a name="system"></a> System Requirements
 
-Parallelization over multiple CPUs is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., macOS, Linux, Unix, BSD), not on Windows. To run the scripts on Windows, one would need to set the number of CPU workers to one. For further details, see [Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). We run all our code on macOS (version 15.3.1). 
+Parallelization over multiple CPU workers is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., macOS, Linux, Unix, BSD), not on Windows. To run the scripts on Windows, one would need to set the number of CPU workers to one. For further details, see [Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). We run all our code on macOS (version 15.3.1). 
 
 ## <a name="run"></a> Running the Scripts
 
