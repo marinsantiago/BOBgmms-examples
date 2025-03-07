@@ -114,4 +114,4 @@ Aeberhard, S., and Forina, M. (1991), "Wine." *UCI Machine Learning Repository*.
 
 Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P., and Lukasik, S. (2012), "Seeds." *UCI Machine Learning Repository*. https://doi.org/10.24432/C5H30K.
 
-Marin, S., Loong, B., and Westveld, A. H. (2025+), "BOB: Bayesian Optimized Bootstrap for Uncertainty Quantification in Gaussian Mixture Models."
+Marin, S., Loong, B., and Westveld, A. H. (2025+), "BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models."
