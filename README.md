@@ -15,29 +15,51 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 - [References](#refs)
 
 ## <a name="folders"></a> Folder Structure 
+```BOBgmms-examples```
 
-- `R/`: R scripts with functions required throughout the analysis.
-- `simulations/`: Source code to reproduce the results in the *Simulations* section from the article.
-  - `sim_ar_neg_05/`: Source code to reproduce the simulation results, assuming covariance matrices of the form $`(\boldsymbol{\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}`$, for all $k\in\{1,\dots,K\}$.
-    - `sim1/`: Source code to reproduce the results for the 1st simulation setting.
-    - `sim2/`: Source code to reproduce the results for the 2nd simulation setting.
-    - `sim3/`: Source code to reproduce the results for the 3rd simulation setting.
-    - `sim4/`: Source code to reproduce the results for the 4th simulation setting.
-    - `sim5/`: Source code to reproduce the results for the 5th simulation setting.
-    - `sim6/`: Source code to reproduce the results for the 6th simulation setting.
-    - `sim7/`: Source code to reproduce the results for the 7th simulation setting.
-    - `sim8/`: Source code to reproduce the results for the 8th simulation setting.
-    - `sim9/`: Source code to reproduce the results for the 9th simulation setting.
-    - `sim-results/`: Source code to generate plots and tables with results from the above 9 simulation studies.
-  - `sim-illustrative/`: Source code to reproduce the simulation results used as an illustrative example.
-  - `sim-varying-n/`: Source code to reproduce the simulation results with a varying sample size.
-  - `sim-trivial-init/`: Source code to reproduce the simulation results with a trivial initialization.
-  - `sim-informative-alpha/`: Source code to reproduce the simulation results with a strong informative prior on the mixture proportions.
-- `data-analyses/`: Source code to reproduce the results from the real-world data analyses.
-  - `wine/`: Source code to reproduce the results from the analysis of the *wines* data.
-  - `kernels/`: Source code to reproduce the results from the analysis of the *seeds* data.
-- `stan/`: Stan code used to fit a $K$ component Bayesian Gaussian Mixture, assuming conjugate priors.
-- `one-dimensional-densities/`: Source code to generate one-dimensional density plots. 
+```├──``` `R/`: R scripts with helper functions required throughout the analysis.
+
+```├──``` `simulations/`: Source code to reproduce the results in the *Simulations* section from the article.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim_ar_neg_05/`: Settings with covariance matrices of the form $`(\boldsymbol{\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}`$, for all $k\in\{1,\dots,K\}$.
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim1/`: First simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim2/`: Second simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim3/`: Third simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim4/`: Fourth simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim5/`: Fifth simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim6/`: Sixth simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim7/`: Seventh simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim8/`: Eighth simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim9/`: Ninth simulation setting.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-results/`: Code to reproduce the plots and tables with results from the above 9 settings.
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim-illustrative/`: Code to reproduce the simulation results used as an illustrative example.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim-varying-n/`: Code to reproduce the simulation results with a varying sample size.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim-trivial-init/`: Code to reproduce the simulation results with a trivial initialization.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-informative-alpha/`: Code to reproduce the simulation results with a strong informative prior on the mixture proportions.
+
+```├──``` `data-analyses/`: Source code to reproduce the results from the real-world data analyses.
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `wine/`: Source code to reproduce the results from the analysis of the *wines* data.
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `kernels/`: Source code to reproduce the results from the analysis of the *seeds* data.
+    
+```├──``` `stan/`: Stan code used to fit a $K$ component Bayesian Gaussian Mixture, assuming conjugate priors.
+
+```└──``` `one-dimensional-densities/`: Source code to generate one-dimensional density plots. 
 
 ## <a name="software"></a> Software Requirements
 
