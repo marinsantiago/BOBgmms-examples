@@ -21,7 +21,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 ```├──``` `simulations/`: Source code to reproduce the results in the *Simulations* section from the article.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim_ar_neg_05/`: Settings with covariance matrices of the form $`(\boldsymbol{\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}`$, for all $k\in\{1,\dots,K\}$.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim_ar_neg_05/`: Settings with covariance matrices of the form $`(\boldsymbol{\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}`$.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim1/`: First simulation setting.
 
@@ -49,7 +49,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim-trivial-init/`: Code to reproduce the simulation results with a trivial initialization.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-informative-alpha/`: Code to reproduce the simulation results with a strong informative prior on the mixture proportions.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-informative-alpha/`: Simulation settings with a strong informative prior on the mixture proportions.
 
 ```├──``` `data-analyses/`: Source code to reproduce the results from the real-world data analyses.
 
