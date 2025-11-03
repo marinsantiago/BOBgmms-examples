@@ -113,7 +113,7 @@ To reproduce the results from the analysis of benchmark data, start by downloadi
 
 ## <a name="data"></a> Data
 
-We make use of the [*wine*](https://archive.ics.uci.edu/dataset/109/wine) (Aeberhard and Forina, 1991) and [*seeds*](https://archive.ics.uci.edu/dataset/236/seeds) (Charytanowicz et al., 2012) data sets. Both data sets are publicly available from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/).
+We make use of the [*wine*](https://archive.ics.uci.edu/dataset/109/wine) (Aeberhard and Forina, 1991) and [*seeds*](https://archive.ics.uci.edu/dataset/236/seeds) (Charytanowicz et al., 2012) data, which are publicly available from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/).
 
 ## <a name="cite"></a> Citation
 
