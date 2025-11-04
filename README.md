@@ -1,6 +1,6 @@
 # BOBgmms-examples
 
-This repository contains source code to reproduce the results from the article "[BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models](https://arxiv.org/abs/2311.03644)" (Marin et al., 2025+).
+This repository contains source code to reproduce the results from the article "[BOB: Bayesian optimized bootstrap for approximate posterior sampling in Gaussian mixture models](https://doi.org/10.1007/s11222-025-10763-y)" (Marin et al., 2026).
 
 The `BOBgmms` R package is available at the Github repository: [https://github.com/marinsantiago/BOBgmms](https://github.com/marinsantiago/BOBgmms)
 
@@ -21,7 +21,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 ```├──``` `simulations/`: Source code to reproduce the results in the *Simulations* section from the article.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim_ar_neg_05/`: Settings with covariance matrices of the form $`({\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}`$.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim_ar_neg_05/`: Settings with covariance matrices of the form $({\Sigma}_{k})_{j,j'} = \{-0.5^{|j-j'|}\}_{j,j'=1}^{d}$.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim1/`: First simulation setting.
 
@@ -41,7 +41,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim9/`: Ninth simulation setting.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-results/`: Code to reproduce the plots and tables with results from the above 9 settings.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-results/`: Code to reproduce the plots and tables with the results from the nine experimental settings.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim-illustrative/`: Code to reproduce the simulation results used as an illustrative example.
 
@@ -57,7 +57,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `kernels/`: Source code to reproduce the results from the analysis of the *seeds* data.
     
-```├──``` `stan/`: Stan code used to fit a $K$ component Bayesian Gaussian Mixture, assuming conjugate priors.
+```├──``` `stan/`: Stan code used to fit a $K$ component Bayesian Gaussian mixture, assuming conjugate priors.
 
 ```└──``` `one-dimensional-densities/`: Source code to generate one-dimensional density plots. 
 
@@ -81,7 +81,12 @@ Before downloading and installing `rstan`, you need to set up your R installatio
 
 ## <a name="system"></a> System Requirements
 
-Parallelization over multiple CPU workers is conducted via *forking* (rather than *sockets*), so it only works on POSIX systems (i.e., macOS, Linux, Unix, BSD), not on Windows. To run the scripts on Windows, one would need to set the number of CPU workers to one. For further details, see [Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). 
+Parallelization over multiple CPU workers is conducted via *forking* 
+(rather than *sockets*), so it is only available on POSIX systems (e.g., macOS, 
+Linux, Unix, BSD), not on Windows. On non-POSIX platforms (such as Windows), 
+the scripts will still run, but the number of CPU workers will be automatically 
+set to one. For further details, see 
+[Package '`parallel`'](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf). 
 
 One can verify the OS type by running the following R code:
 
@@ -97,19 +102,46 @@ Step-by-step instructions on how to reproduce the results from the article:
 
 #### Simulation Results
 
-To reproduce the simulation results from the article, start by downloading the folder `simulations/sim_ar_neg_05/setting1/` and execute the scripts `sim1_data.R`, `sim1_rw.R`, `sim1_stan.R`, and `sim1_results.R` (in that order). It is recommended to restart the R session each time you execute a script in order to terminate any remaining "zombie processes" from the parallelization exercise. Then, repeat the same steps for folders `simulations/sim_ar_neg_05/setting2/`-to-`simulations/sim_ar_neg_05/setting9/`. To obtain box plots and tables summarizing the results for all nine settings, execute the scripts `boxplots.R`, `optimal_x_vals.R`, and  `table_medians.R` from the `simulations/sim_ar_neg_05/sim-results/` folder.
+  - To reproduce the simulation results from the article, start by downloading the 
+  folder `simulations/sim_ar_neg_05/setting1/` and execute the scripts 
+  `sim1_data.R`, `sim1_rw.R`, `sim1_stan.R`, and `sim1_results.R` (in that order). 
+  It is recommended to restart the R session each time you execute a script in 
+  order to terminate any remaining "zombie processes" from the parallelization 
+  exercise. Then, repeat these previous steps, but with the folders 
+  `simulations/sim_ar_neg_05/setting2/`-to-`simulations/sim_ar_neg_05/setting9/`. 
+  To obtain plots and tables summarizing the results from the nine experimental 
+  settings, execute the scripts `boxplots.R`, `optimal_x_vals.R`, and  `table_medians.R` 
+  from the `simulations/sim_ar_neg_05/sim-results/` folder.
 
-To reproduce the results from our illustrative example, download the folder `simulations/sim-illustrative/` and execute the script `sim_illustrative.R`.
+  - To reproduce the results from our illustrative example, download the folder 
+  `simulations/sim-illustrative/` and execute the script `sim_illustrative.R`.
 
-To reproduce the simulation results with a varying sample sizes, download the folder `simulations/sim-varying-n/` and execute the scripts `sim_n50.R`, `sim_n125.R`, `sim_n250.R`, `sim_n375.R`, `sim_n500.R`, and  `sim_n_results.R` (in that order). Once again, it is recommended to restart the R session each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. 
+  - To reproduce the simulation results with a varying sample sizes, download 
+  the folder `simulations/sim-varying-n/` and execute the scripts `sim_n50.R`, 
+  `sim_n125.R`, `sim_n250.R`, `sim_n375.R`, `sim_n500.R`, and  `sim_n_results.R` 
+  (in that order). Once again, it is recommended to restart the R session each 
+  time you execute a script to terminate any remaining "zombie processes" from 
+  the parallelization exercise. 
 
-To reproduce the simulation results with a trivial initialization, download the folder `simulations/sim-trivial-init/` and execute the scripts `sim_d5_trivial_init.R`, `sim_d10_trivial_init.R`, `sim_d15_trivial_init.R`, and `simtrivial_init_results.R` (in that order). Once again, it is recommended to restart the R session each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. 
+  - To reproduce the simulation results with a trivial initialization, download 
+  the folder `simulations/sim-trivial-init/` and execute the scripts 
+  `sim_d5_trivial_init.R`, `sim_d10_trivial_init.R`, `sim_d15_trivial_init.R`, 
+  and `simtrivial_init_results.R` (in that order). Once again, it is recommended 
+  to restart the R session each time you execute a script to terminate any 
+  remaining "zombie processes" from the parallelization exercise. 
 
-To reproduce the simulation results with a strong informative prior on the mixture proportions, download the folder `sim-informative-alpha/` and execute the scripts `sim_alphas_d5.R`, `sim_alphas_d10.R`, `sim_alphas_d15.R`, and `sim_alphas_results.R` (in that order). Once again, it is recommended to restart the R session each time you execute a script to terminate any remaining "zombie processes" from the parallelization exercise. 
+  - To reproduce the simulation results with a strong informative prior on the 
+  mixture proportions, download the folder `sim-informative-alpha/` and execute 
+  the scripts `sim_alphas_d5.R`, `sim_alphas_d10.R`, `sim_alphas_d15.R`, and 
+  `sim_alphas_results.R` (in that order). Once again, it is recommended to 
+  restart the R session each time you execute a script to terminate any remaining 
+  "zombie processes" from the parallelization exercise. 
 
 #### Results from Benchmark Data Analysis
 
-To reproduce the results from the analysis of benchmark data, start by downloading the folder `data-analyses/wine/`  and execute the script `wines.R`. Then, execute the script `kernels.R` from the folder `data-analyses/kernels/`.
+  - To reproduce the results from the analysis of benchmark data, start by 
+  downloading the folder `data-analyses/wine/`  and execute the script `wines.R`. 
+  Then, execute the script `kernels.R` from the folder `data-analyses/kernels/`.
 
 ## <a name="data"></a> Data
 
@@ -117,16 +149,17 @@ We make use of the [*wine*](https://archive.ics.uci.edu/dataset/109/wine) (Aeber
 
 ## <a name="cite"></a> Citation
 
-If you use any part of this code in your work, please consider citing our paper:
+If you use any part of this code in your work, please consider citing our *Statistics and Computing* paper:
 
 ```
-@misc{marin_bob,
-  title         = {BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models}, 
-  author        = {Santiago Marin and Bronwyn Loong and Anton H. Westveld},
-  year          = {2024},
-  eprint        = {2311.03644},
-  archivePrefix = {arXiv},
-  primaryClass  = {stat.ME}
+@article{marin_bob,
+  title   = {BOB: Bayesian optimized bootstrap for approximate posterior sampling in Gaussian mixture models},
+  author  = {Santiago Marin and Bronwyn Loong and Anton H. Westveld},
+  journal = {Statistics and Computing},
+  volume  = {36},
+  pages   = {14},
+  year    = {2026},
+  doi     = {10.1007/s11222-025-10763-y}
 }
 ```
 
@@ -136,4 +169,5 @@ Aeberhard, S., and Forina, M. (1991), "Wine." *UCI Machine Learning Repository*.
 
 Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P., and Lukasik, S. (2012), "Seeds." *UCI Machine Learning Repository*. https://doi.org/10.24432/C5H30K.
 
-Marin, S., Loong, B., and Westveld, A. H. (2025+), "BOB: Bayesian Optimized Bootstrap for Approximate Posterior Sampling in Gaussian Mixture Models."
+Marin, S., Loong, B., and Westveld, A. H. (2026), "BOB: Bayesian optimized bootstrap for approximate posterior sampling in Gaussian mixture models." *Statistics and Computing*, **36**, 14. [doi:10.1080/10618600.2025.2572327](https://doi.org/10.1007/s11222-025-10763-y)
+
