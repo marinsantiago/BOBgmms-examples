@@ -41,7 +41,7 @@ The `BOBgmms` R package is available at the Github repository: [https://github.c
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim9/`: Ninth simulation setting.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-results/`: Code to reproduce the plots and tables with the results from the nine experimental settings.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```└──``` `sim-results/`: Code to reproduce the plots and tables with the results from the experimental settings.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```├──``` `sim-illustrative/`: Code to reproduce the simulation results used as an illustrative example.
 
